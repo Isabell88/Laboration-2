@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+}
+
+header {
+    position: sticky;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 20rem;
+    padding-top: 3rem;
+    background-color: rgb(238, 228, 228);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 40rem;
+    padding: 2rem 6rem;
+    border: solid black 1px;
+
+}
+.navbar-box{
+    padding-top: 2rem;
+    max-width: 40rem;
+    
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;   
+}
+nav ul {
+    padding: 0;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+}
