@@ -1,0 +1,25 @@
+@media (max-width:900px){
+
+    .main-content-box {
+        text-align: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 1fr;
+        gap: 0;
+    }
+    img {
+        padding: 5rem;
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+    
+    .aboutme {
+        margin: 5rem;
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+
+    .navbar {
+        display: none;
+    }
+}
+    

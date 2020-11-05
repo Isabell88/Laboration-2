@@ -31,6 +31,7 @@ header {
     justify-content: center;
     max-width: 40rem;
     border-bottom: solid black 1px;
+    text-align: center;
 }
 
 .navbar-box{
@@ -52,29 +53,31 @@ nav a {
     text-decoration: none;
     color: black;
 }
-main {
+.main-content-box {
     display: grid;
     grid-template-columns: 0.1fr 1fr 2fr 0.5fr;
     grid-template-rows: 0.1fr 2fr 0.1fr;
     grid-gap: 5rem;
 }
 img {
-    max-width: 30rem;
+    width: 100%;
     grid-column-start: 2;
-    grid-column-end: 3;
     grid-row-start: 2;
-    grid-column-end: 3;
+      
+}
+
+.aboutme {
+    background-color: rgba(128, 128, 128, 0.383);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    grid-column-start: 3;
+    grid-row-start: 2;
     
 }
-.aboutme {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-column-end: 3;
-}
+
 .aboutme p {
-padding-top: 5rem;
-font-size: 20px;
+    padding-top: 5rem;
+    font-size: 20px;
 
 }
 h3 {
@@ -92,7 +95,79 @@ footer {
     opacity: 80%;
 }
 .border {
-    width: 30rem;
+    width: 50%;
     margin-top: 1rem;
     border-top: solid black 1px;
+}
+
+/* erfarenheter.html sidan */
+
+
+.content-box {
+    display: grid;
+    grid-template-columns: 0.1fr 2fr 2fr 0.1fr;
+    grid-template-rows: 0.2fr 0.1fr 1fr 1fr 1fr 2fr 1fr;
+    gap: 2rem;
+    
+   
+}
+.säljare-åhlens {
+    background-color: rgba(128, 128, 128, 0.383);
+    grid-column-start: 3;
+    grid-row-start: 3;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
+}
+.designer {
+    background-color: rgba(128, 128, 128, 0.383);
+    grid-column-start: 3;
+    grid-row-start: 4;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.mode {
+    background-color: rgba(128, 128, 128, 0.383);
+    grid-column-start: 3;
+    grid-row-start: 5;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+}
+
+.utbildning-box {
+    background-color: rgba(95, 94, 94, 0.383);
+    grid-column-start: 3;
+    grid-row-start: 6;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+}
+
+h2{
+    grid-column-start: 3;
+    grid-row-start: 2;
+    /* background-color: rgba(73, 72, 72, 0.383); */
+    border-bottom: solid black 1px;
+}
+h5 {
+    
+    margin-bottom: 0px;
+    
+}
+h6 {
+    margin-top: 0px;
+    color: gray;
+}
+.utbildning-box{
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;  
+    
+}
+
+    
+
+
 }
