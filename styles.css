@@ -1,5 +1,8 @@
 * {
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 50;
+    
 }
 body {
     font-weight: 20;
@@ -55,15 +58,19 @@ nav a {
 }
 .main-content-box {
     display: grid;
-    grid-template-columns: 0.1fr 1fr 2fr 0.5fr;
+    grid-template-columns: 0.1fr 1fr 2fr 0.1fr;
     grid-template-rows: 0.1fr 2fr 0.1fr;
     grid-gap: 5rem;
 }
-img {
-    width: 100%;
+.profile-img{
     grid-column-start: 2;
     grid-row-start: 2;
-      
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+img {
+    width: 100%;     
 }
 
 .aboutme {
@@ -76,7 +83,7 @@ img {
 }
 
 .aboutme p {
-    padding-top: 5rem;
+    /* padding-top: 5rem; */
     font-size: 20px;
 
 }
@@ -86,13 +93,18 @@ h3 {
     
 }
 footer {
-    height: 10rem;
-    background-color: rgb(238, 228, 228);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content:center;
+    text-align: center;
     opacity: 80%;
+    height: 10rem;
+    background-color: rgb(238, 228, 228);
+    padding: 0.3rem;
+}
+.githab {
+    text-decoration: none;
 }
 .border {
     width: 50%;
@@ -105,12 +117,77 @@ footer {
 
 .content-box {
     display: grid;
-    grid-template-columns: 0.1fr 2fr 2fr 0.1fr;
-    grid-template-rows: 0.2fr 0.1fr 1fr 1fr 1fr 2fr 1fr;
+    grid-template-columns: 0.1fr 2fr 3fr 0.1fr;
+    grid-template-rows: 0.2fr 0.1fr 0,5fr 1fr 1fr 2fr 1fr;
     gap: 2rem;
-    
-   
+    margin-bottom: 2rem ;
 }
+.selfportrait {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3; 
+    grid-row-end: 6;  
+}  
+.selfportrait img {
+    width: 100%;
+} 
+
+.kuskaper-intressen {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-column-start: 2;
+    grid-row-start: 6;
+    gap: .5rem;
+    
+}
+
+.språk-box {
+    background-color:  rgba(238, 228, 228, 0.556);
+    grid-column-start: 2;
+    grid-row-start: 2;
+    
+    text-align: center;
+}
+
+.behörigheter {
+    background-color:  rgba(238, 228, 228, 0.556);
+    grid-column-start: 1;
+    grid-row-start: 2;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.kunskaper-box {
+    background-color:  rgba(238, 228, 228, 0.556);
+    padding-right: 0.3rem;
+    text-align: right;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.intressen-box {
+    background-color:  rgba(238, 228, 228, 0.556);
+    padding-left: 0.3rem ;
+    text-align: left;
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+/* .center li{
+    padding-left: 0px; */
+      
+  
+
 .säljare-åhlens {
     background-color: rgba(128, 128, 128, 0.383);
     grid-column-start: 3;
@@ -137,37 +214,39 @@ footer {
 }
 
 .utbildning-box {
-    background-color: rgba(95, 94, 94, 0.383);
+    background-color:  rgba(238, 228, 228, 0.556);
     grid-column-start: 3;
     grid-row-start: 6;
     padding-left: 1rem;
     padding-right: 1rem;
 
 }
+.utbildning-box {
+    display: flex;
+    flex-direction: column; 
+    /* justify-content: space-evenly;   */
+}
+
 
 h2{
     grid-column-start: 3;
     grid-row-start: 2;
-    /* background-color: rgba(73, 72, 72, 0.383); */
     border-bottom: solid black 1px;
 }
 h5 {
-    
+    font-size: 1.2rem;
     margin-bottom: 0px;
-    
 }
+
 h6 {
+    font-size: 1.1rem;
     margin-top: 0px;
     color: gray;
 }
-.utbildning-box{
-    display: flex;
-    flex-direction: column; 
-    justify-content: space-between;  
-    
-}
+
+
+
 
     
 
 
-}

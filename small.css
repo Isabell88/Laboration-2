@@ -6,14 +6,20 @@
         grid-template-rows: 0.1fr 1fr;
         gap: 0;
     }
-    img {
-        padding: 5rem;
+    .profile-img{
         grid-column-start: 1;
         grid-row-start: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+    }
+    img {
+        padding: 2rem 5rem 2rem;
+        
     }
     
     .aboutme {
-        margin: 5rem;
+        margin: 2rem 5rem;
         grid-column-start: 1;
         grid-row-start: 2;
     }
@@ -21,5 +27,73 @@
     .navbar {
         display: none;
     }
+    /* Erfarenheter.HTML sidan  */
+    
+    .content-box{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 0,5fr 1fr 1fr 2fr 1fr 2fr 2fr;
+        gap: .3rem;
+    }
+    .selfportrait {
+        grid-column-start: 1;
+        grid-column-end: unset;
+        grid-row-start: 1; 
+        grid-row-end: unset; 
+        margin-top: 2rem; 
+    }
+    .kuskaper-intressen {
+        grid-column-start: 1;
+        grid-row-start: 7;
+    }
+    h2{
+        grid-column-start: 1;
+        grid-row-start: 2;
+        text-align: center;
+    }
+        
+    .säljare-åhlens {
+        
+        grid-column-start: 1;
+        grid-row-start: 3;
+        
+        
+    }
+    .designer {
+        
+        grid-column-start: 1;
+        grid-row-start: 4;
+        
+    }
+    
+    .mode {
+        
+        grid-column-start: 1;
+        grid-row-start: 5;
+        
+    
+    }
+    
+    .utbildning-box {
+        
+        grid-column-start: 1;
+        grid-row-start: 6;
+        
+    
+    }
+        
+}
+
+@media (max-width:500px){
+    
+    .aboutme {
+        margin: 0;
+        padding-bottom: 2rem;
+    }
+        img {
+            padding: 0rem;
+            
+            
+        }
+
 }
     
