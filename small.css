@@ -24,9 +24,7 @@
         grid-row-start: 2;
     }
 
-    .navbar {
-        display: none;
-    }
+    
     /* Erfarenheter.HTML sidan  */
     
     .content-box{
@@ -77,13 +75,27 @@
         
         grid-column-start: 1;
         grid-row-start: 6;
+    }
+    h5 {
+        font-size: 1.1rem;
         
+    }
     
+    h6 {
+        font-size: 1.1rem;
+        
+    }
+    p{
+        font-size: 1rem;
     }
         
 }
 
 @media (max-width:500px){
+
+    .navbar {
+        display: none;
+    }
     
     .aboutme {
         margin: 0;
