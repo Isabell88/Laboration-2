@@ -5,15 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="small.css">
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
+    <!-- icon link -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
     <title>MY CV</title>
 </head>
 <body>
-    
+     <!-- Header content and nav bar -->
     <header>
         <div class="header-box">
             <div class="my-name">
-                <h1>ISABELL BETAR</h1>
+
+                <h1 id="type-name"></h1>
                 <h4>GRAFISK DESIGNER & BLIVANDE FRONTEND UTVECKLARE</h4>
             </div>
             <div class="navbar-box"> 
@@ -21,17 +24,35 @@
                     <ul class="navbar">
                         <li><a href="index.html">HEM</a></li>
                         <li><a href="erfarenheter.html">ERFARENHETER & KUNSKAPER</a></li>
-                        <!-- <li><a href="#">KUNSKAPER</a></li> -->
                     </ul>
                 </nav>
             </div>
+
+            <!--Mobile top nav menu -->
+
+             <div class="mobilMenu">
+                <div class="menu-icon">
+                    <i id="dropdown" class="fas fa-bars"></i>
+                </div>
+                <div id="menu">
+                    <a href="index.html">HEM</a>
+                    <a href="erfarenheter.html">ERFARENHETER & KUNSKAPER</a>
+                </div>
+            </div>
+
         </div>
+
     </header>
+    
+    <!-- Main content -->
+    
     <main>
         <div class="content-box">
-            
+
+    <!-- Left side -->
+
             <div class="selfportrait">
-                    <img src="/imeges/selfportret.jpg" alt="selfportrait">
+                    <img src="./imeges/selfportret.jpg" alt="selfportrait">
             </div>
                 
             <div class="kuskaper-intressen">
@@ -42,8 +63,7 @@
     
                         <p>Svenska - Modersmål<p>
                         <p>Arabiska - Modersmål</p>
-                        <p>Engilska - Flytande</p> 
-                        
+                        <p>Engelska - Flytande</p> 
                 </div>
 
                 <div class="behörigheter">
@@ -75,11 +95,10 @@
                         <p>Träning</p> 
                         <p>Dans</p>
                         <p>usik</p>      
-                    
                 </div>
             </div>
 
-
+<!-- right side -->
             
             <h2>ERFARENHETER</h2>
             <div class="säljare-åhlens">
@@ -138,37 +157,16 @@
                     <h5>Gymnasieutbildning</h5>
                     <h6>2006 – 2008</h6>
                 </div>
-
-                
-
-                <!-- <div class="utbildning">
-                    <div>2020 - 2022</div>
-                    <div>Yrkesutbildning frontend utvecklare</div>
-                </div>
-                
-                <div class="utbildning">
-                    <div>2017 - 2017</div>
-                    <div>Kurs inom Mode Design</div>
-                </div>
-                <div class="utbildning">
-                    <div>2013 - 2016</div>
-                    <div>Kärnämnen komvux Falköping.</div>
-                </div>
-                <div class="utbildning">
-                    <div>2008 - 2011</div>
-                    <div>yrkesutbildning i Grafiskdesign(MITM College KSA)</div>
-                </div>
-                <div class="utbildning">
-                    <div>2006 - 2008</div>
-                    <div>Gymnasieutbildning</div>
-                </div>
                 
             </div>
-             -->
+             
 
         </div>
         
     </main>
+    
+     <!-- footer content -->
+
     <footer>
             <div>Adress: Kjellmansgatan 20 414 63 Göteborg</div> 
             <div>Email: isabell.betar@gmail.com</div>

@@ -2,7 +2,6 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 50;
-    
 }
 body {
     font-weight: 20;
@@ -12,7 +11,7 @@ body {
 }
 
 header {
-    /* position: sticky; */
+    letter-spacing: 0.1rem;
     left: 0;
     top: 0;
     right: 0;
@@ -33,7 +32,7 @@ header {
     align-items: center;
     justify-content: center;
     max-width: 40rem;
-    border-bottom: solid black 1px;
+    border-bottom: solid black 2px;
     text-align: center;
 }
 
@@ -56,13 +55,59 @@ nav a {
     text-decoration: none;
     color: black;
 }
+/* Mobile menu */
+
+.mobilMenu {
+    display: none;
+    height: 1rem;
+    width: 100%;
+    padding: 0 1rem;
+    background-color:  rgb(238, 228, 228);
+    padding: 0px;
+    padding-right: 0px;
+    left: 0;
+    right: 0;
+
+    transition: hight 300ms;
+    overflow-y: hidden;
+}
+.menu-icon{
+    height: 1rem;
+}
+.mobilMenu i {
+    cursor: pointer;   
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#menu a {
+    padding-top: 2rem;
+    /* border-bottom: solid black; */
+   
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 .main-content-box {
     display: grid;
     grid-template-columns: 0.1fr 1fr 2fr 0.1fr;
     grid-template-rows: 0.1fr 2fr 0.1fr;
     grid-gap: 5rem;
 }
-.profile-img{
+.profile-img {
     grid-column-start: 2;
     grid-row-start: 2;
     display: flex;
@@ -136,7 +181,8 @@ a:hover {
     grid-column-end: 3;
     grid-row-start: 3; 
     grid-row-end: 6;  
-}  
+} 
+
 .selfportrait img {
     width: 100%;
 } 
@@ -155,7 +201,6 @@ a:hover {
     background-color:  rgba(238, 228, 228, 0.556);
     grid-column-start: 2;
     grid-row-start: 2;
-    
     text-align: center;
 }
 
@@ -187,11 +232,7 @@ a:hover {
     grid-column-start: 2;
     grid-row-start: 1;
 }
-
-/* .center li{
-    padding-left: 0px; */
       
-  
 
 .säljare-åhlens {
     background-color: rgba(128, 128, 128, 0.383);

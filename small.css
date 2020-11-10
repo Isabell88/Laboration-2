@@ -96,6 +96,9 @@
     .navbar {
         display: none;
     }
+    .mobilMenu {
+        display: block;
+    }
     
     .aboutme {
         margin: 0;
@@ -103,8 +106,6 @@
     }
         img {
             padding: 0rem;
-            
-            
         }
 
 }

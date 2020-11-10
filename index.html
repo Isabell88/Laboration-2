@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="small.css">
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
     <!-- icon link -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
     <title>MY CV</title>
 </head>
 <body>
-    
+    <!-- Header content and nav bar -->
     <header>
         <div class="header-box">
             <div class="my-name">
-                <h1>ISABELL BETAR</h1>
+                <h1 id="type-name"></h1>
                 <h4>GRAFISK DESIGNER & BLIVANDE FRONTEND UTVECKLARE</h4>
             </div>
             <div class="navbar-box"> 
@@ -27,23 +27,26 @@
                 </nav>
             </div>
             
-            <!--Mobile top nav menu -->
+     <!--Mobile top nav menu -->
 
-            <div class="menu-icon">
-                <i class="fas fa-bars"></i>
+            <div class="mobilMenu">
+                <div class="menu-icon">
+                    <i id="dropdown" class="fas fa-bars"></i>
+                </div>
+                <div id="menu">
+                    <a href="index.html">HEM</a>
+                    <a href="erfarenheter.html">ERFARENHETER & KUNSKAPER</a>
+                </div>
             </div>
-            <div id="menu">
-                <a href="index.html">HEM</a>
-                <a href="erfarenheter.html">ERFARENHETER & KUNSKAPER</a>
-            </div>
-        </div>
-        
-        
+        </div>         
     </header>
+
+    <!-- main img and paragraph -->
+
     <main>
         <div class="main-content-box">
             <div class="profile-img">
-                <img src="/imeges/me.jpg" alt="profile img">
+                <img src="./imeges/me.jpg" alt="profile img">
             </div>
 
             <div class="aboutme">
@@ -52,20 +55,18 @@
                 <p>Isabell är en driven person som har design som stort intresse. Jag är född i Malmö år 1988 av en svensk mamma och libanesisk pappa. <br>
                     Tillsammans med familjen flyttade vi utomlands där jag slutförde mina studier i grafisk design och jobbade senare som frilansande grafisk designer. <br><br> 
 
-                    Efter följande flyttade jag tillbaka till Sverige, då jag fortsatte studera det svenska språket och jobbade som butikssäljare. 
-                    
-                    
+                    Efter följande flyttade jag tillbaka till Sverige, då jag fortsatte studera det svenska språket och jobbade som butikssäljare.       
                 </p>
             </div>
         </div>
     </main>
+    <!-- footer content -->
     <footer>
             <div>Adress: Kjellmansgatan 20 414 63 Göteborg</div> 
             <div>Email: isabell.betar@gmail.com</div>
             <div class="githab"><a href="https://github.com/Isabell88">Besök min githab här </a></div> 
             <div>Mobil: 072 01 42 103</div> 
             <div class="border"></div>   
-
     </footer>
 </body>
 </html>
