@@ -1,14 +1,53 @@
+/*  Tag Selector */
 * {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 50;
+    font-weight: 100;
 }
+
 body {
-    font-weight: 20;
     margin: 0;
     background-image: url("/imeges/background.jpg");
     background-size: cover;
 }
+img {
+    width: 100%;     
+}
+
+a:hover {
+    color: gray;
+}
+
+h2{
+    grid-column-start: 3;
+    grid-row-start: 2;
+    border-bottom: solid black 1px;
+}
+
+h3 {
+    font-size: 30px;
+    /* margin-top: 5rem;    */
+}
+
+h5 {
+    font-size: 1.2rem;
+    margin-bottom: 0px;
+    padding-bottom: 0.5rem;
+}
+
+h6 {
+    font-size: 1.1rem;
+    margin-top: 0px;
+    margin-bottom: 1rem;
+    color: gray;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Header content */
 
 header {
     letter-spacing: 0.1rem;
@@ -23,7 +62,6 @@ header {
     align-items: center;
     justify-content: center;
     opacity: 80%;
-
 }
 
 .my-name {
@@ -36,25 +74,28 @@ header {
     text-align: center;
 }
 
-.navbar-box{
+.navbar-box {
     padding-top: 2rem;
     max-width: 40rem;
-    
 }
+
 .navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    list-style-type: none;   
+    list-style-type: none; 
 }
+
 nav ul {
     padding: 0;
 }
+
 nav a {
     text-decoration: none;
     color: black;
 }
+
 /* Mobile menu */
 
 .mobilMenu {
@@ -71,11 +112,9 @@ nav a {
     transition: hight 300ms;
     overflow-y: hidden;
 }
-.menu-icon{
+
+.menu-icon {
     height: 1rem;
-}
-.mobilMenu i {
-    cursor: pointer;   
 }
 
 #menu {
@@ -85,21 +124,16 @@ nav a {
 }
 
 #menu a {
-    padding-top: 2rem;
-    /* border-bottom: solid black; */
-   
+    padding-top: 2rem;      
 }
 
-a {
-    text-decoration: none;
-    color: black;
-}
 .menu-icon {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+/* Main section */
 
 .main-content-box {
     display: grid;
@@ -107,6 +141,7 @@ a {
     grid-template-rows: 0.1fr 2fr 0.1fr;
     grid-gap: 5rem;
 }
+
 .profile-img {
     grid-column-start: 2;
     grid-row-start: 2;
@@ -114,29 +149,24 @@ a {
     justify-content: center;
     align-items: center;  
 }
-img {
-    width: 100%;     
-}
 
 .aboutme {
     background-color: rgba(128, 128, 128, 0.383);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     padding-left: 2rem;
     padding-right: 2rem;
     grid-column-start: 3;
     grid-row-start: 2;
-    
 }
 
 .aboutme p {
-    /* padding-top: 5rem; */
     font-size: 20px;
+}
 
-}
-h3 {
-    font-size: 30px;
-    margin-top: 5rem;
-    
-}
+/* footer section */
+
 footer {
     display: flex;
     flex-direction: column;
@@ -148,12 +178,10 @@ footer {
     background-color: rgb(238, 228, 228);
     padding: 0.3rem;
 }
+
 .githab a {
     color: black;
     text-decoration: none;  
-}
-a:hover {
-    color: gray;
 }
 
 .border {
@@ -162,7 +190,7 @@ a:hover {
     border-top: solid black 1px;
 }
 
-/* erfarenheter.html sidan */
+/* Erfarenheter.html sidan */
 
 
 .content-box {
@@ -172,6 +200,9 @@ a:hover {
     gap: 2rem;
     margin-bottom: 2rem ;
 }
+
+/* left side */
+
 .selfportrait {
     display: flex;
     justify-content: center;
@@ -193,8 +224,7 @@ a:hover {
     grid-template-rows: 2fr 1fr;
     grid-column-start: 2;
     grid-row-start: 6;
-    gap: .5rem;
-    
+    gap: .5rem;    
 }
 
 .språk-box {
@@ -202,6 +232,7 @@ a:hover {
     grid-column-start: 2;
     grid-row-start: 2;
     text-align: center;
+    padding-bottom: 1rem;
 }
 
 .behörigheter {
@@ -233,61 +264,39 @@ a:hover {
     grid-row-start: 1;
 }
       
+/* Right side */
 
 .säljare-åhlens {
     background-color: rgba(128, 128, 128, 0.383);
     grid-column-start: 3;
     grid-row-start: 3;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    
+    padding: 0rem 1rem 1rem 1rem;   
 }
+
 .designer {
     background-color: rgba(128, 128, 128, 0.383);
     grid-column-start: 3;
     grid-row-start: 4;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 0rem 1rem 1rem 1rem;
 }
 
 .mode {
     background-color: rgba(128, 128, 128, 0.383);
     grid-column-start: 3;
     grid-row-start: 5;
-    padding-left: 1rem;
-    padding-right: 1rem;
-
+    padding: 0rem 1rem 1rem 1rem;
 }
 
 .utbildning-box {
     background-color:  rgba(238, 228, 228, 0.556);
     grid-column-start: 3;
     grid-row-start: 6;
-    padding-left: 1rem;
-    padding-right: 1rem;
-
+    padding: 1rem 1rem ;
 }
+
 .utbildning-box {
     display: flex;
     flex-direction: column; 
-    /* justify-content: space-evenly;   */
-}
-
-
-h2{
-    grid-column-start: 3;
-    grid-row-start: 2;
-    border-bottom: solid black 1px;
-}
-h5 {
-    font-size: 1.2rem;
-    margin-bottom: 0px;
-}
-
-h6 {
-    font-size: 1.1rem;
-    margin-top: 0px;
-    color: gray;
 }
 
 

@@ -1,4 +1,37 @@
-@media (max-width:900px){
+/* Tablet size */
+
+@media (max-width:900px) {
+
+    /*  Tag Selector */
+
+    h2 {
+        grid-column-start: 1;
+        grid-row-start: 2;
+        text-align: center;
+    }
+
+    h4 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    h5 {
+        font-size: 1.1rem;
+    }
+    
+    h6 {
+        font-size: 1.1rem;   
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    img {
+        padding: 2rem 5rem 2rem;    
+    }
+    
+    /* Main section */
 
     .main-content-box {
         text-align: center;
@@ -6,16 +39,13 @@
         grid-template-rows: 0.1fr 1fr;
         gap: 0;
     }
-    .profile-img{
+
+    .profile-img {
         grid-column-start: 1;
         grid-row-start: 1;
         display: flex;
         justify-content: center;
         align-items: center;  
-    }
-    img {
-        padding: 2rem 5rem 2rem;
-        
     }
     
     .aboutme {
@@ -24,14 +54,16 @@
         grid-row-start: 2;
     }
 
-    
     /* Erfarenheter.HTML sidan  */
     
-    .content-box{
+    .content-box {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 0,5fr 1fr 1fr 2fr 1fr 2fr 2fr;
         gap: .3rem;
     }
+
+    /* left side */
+    
     .selfportrait {
         grid-column-start: 1;
         grid-column-end: unset;
@@ -39,36 +71,30 @@
         grid-row-end: unset; 
         margin-top: 2rem; 
     }
+
     .kuskaper-intressen {
         grid-column-start: 1;
         grid-row-start: 7;
     }
-    h2{
-        grid-column-start: 1;
-        grid-row-start: 2;
-        text-align: center;
-    }
+
+    /* Right side */
         
     .säljare-åhlens {
         
         grid-column-start: 1;
-        grid-row-start: 3;
-        
-        
+        grid-row-start: 3;    
     }
+
     .designer {
         
         grid-column-start: 1;
-        grid-row-start: 4;
-        
+        grid-row-start: 4;     
     }
     
     .mode {
         
         grid-column-start: 1;
         grid-row-start: 5;
-        
-    
     }
     
     .utbildning-box {
@@ -76,26 +102,16 @@
         grid-column-start: 1;
         grid-row-start: 6;
     }
-    h5 {
-        font-size: 1.1rem;
-        
-    }
-    
-    h6 {
-        font-size: 1.1rem;
-        
-    }
-    p{
-        font-size: 1rem;
-    }
-        
 }
 
-@media (max-width:500px){
+   /* Mobil size */
+
+@media (max-width:500px) {
 
     .navbar {
         display: none;
     }
+
     .mobilMenu {
         display: block;
     }
@@ -103,10 +119,5 @@
     .aboutme {
         margin: 0;
         padding-bottom: 2rem;
-    }
-        img {
-            padding: 0rem;
-        }
-
+    }        
 }
-    
