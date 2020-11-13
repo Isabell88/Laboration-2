@@ -119,5 +119,9 @@
     .aboutme {
         margin: 0;
         padding-bottom: 2rem;
-    }        
+    } 
+    
+    img {
+        padding: 0rem 0rem 0rem;    
+    }       
 }

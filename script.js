@@ -22,3 +22,4 @@ document.getElementById("type-name").innerHTML += nameArray.shift();
     loopTimer = setTimeout("frameLooper()",100);
 }
 frameLooper();
+
